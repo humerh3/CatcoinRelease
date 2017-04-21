@@ -27,14 +27,7 @@
  * online backup system.
  */
 
-#include "scrypt.h"
-#include "util.h"
-#include <stdlib.h>
-#include <stdint.h>
-#include <string.h>
-#include <openssl/sha.h>
-
-static inline uint32_t be32dec(const void *pp)
+#include 
 {
 	const uint8_t *p = (uint8_t const *)pp;
 	return ((uint32_t)(p[3]) + ((uint32_t)(p[2]) << 8) +
